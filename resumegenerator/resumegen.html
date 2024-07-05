@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="resume.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container" id="cv-form">
+    <h1 class="text-center my-2">RESUME GENERATOR</h1>
+    <p class="text-center my-2">This Is My Resume</p>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Personal Information</h3>
+        <div class="form-group">
+          <label for="nameField">Your Name</label>
+          <input type="text" id="nameField" placeholder="Enter Here" class="form-control">
+        </div>
+        <div class="form-group mt-2">
+          <label for="contactField">Your Contact</label>
+          <input type="text" id="contactField" placeholder="Enter Number" class="form-control">
+        </div>
+        <div class="form-group mt-2">
+          <label for="addressField">Add Your Address</label>
+          <textarea id="addressField" placeholder="Enter Number" class="form-control" rows="5"></textarea>
+        </div>
+        <p class="secondary-text my-3">Important Lines</p>
+        <div class="form-group mt-2">
+          <label for="instaField">Instagram</label>
+          <input type="text" id="instaField" placeholder="Enter Number" class="form-control">
+        </div>
+        <div class="form-group mt-2">
+          <label for="tgField">Telegram</label>
+          <input type="text" id="tgField" placeholder="Enter Number" class="form-control">
+        </div>
+        <div class="form-group mt-2">
+          <label for="linkdField">LinkedIn</label>
+          <input type="text" id="linkedField" placeholder="Enter Number" class="form-control">
+        </div>
+      </div>
+  
+      <div class="col-md-6">
+        <h3>Personal Information</h3>
+        <div class="form-group mt-2">
+          <label for="">Objective</label>
+          <textarea rows="5" placeholder="Enter Number" class="form-control weField" rows="2"></textarea>
+        </div>
+        <div class="form-group mt-2" id="we">
+          <label for="">Work Experience</label>
+          <textarea placeholder="Enter here" class="form-control weField" rows="3"></textarea>
+          <div class="container text-center mt-2" id="weAddButton">
+            <button onclick="addNewWEField()" class="btn btn-primary btn-sm"> Add </button>
+          </div>
+        </div>
+        <div class="form-group mt-2" id="aq">
+          <label for="">Academic Qualification</label>
+          <textarea placeholder="Enter here" class="form-control eqField" rows="3"></textarea>
+          <div class="container text-center mt-2" id="aqAddButton">
+            <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-3">
+      <button class="btn btn-primary btn-lg">Generate CV</button>
+    </div>
+  </div>
+
+
+
+<!-- cv templates -->
+ <div class="container" id="cv-templates">
+  <div class="col-md-4 text-center py-5 background" >
+      <!-- first column -->
+       <img src="/task/resumegenerator/resume img/person.jpg" alt="" class="img-fluid myimg">
+
+       <div class="container">
+        <h1>Aysth Thameema</h1>
+        <p> <i class="fa-solid fa-location-dot"></i>
+          Thabsheera Manzil Juma Masjid Road Cherkala P.O chengala 671541</p>
+          <p><i class="fa-solid fa-phone"></i>
+          +91 6235896697<br>
+          <i class="fa-solid fa-phone"></i>+91 9526092523</p>
+          <hr>
+<p> <h6>
+  <a href="#1"><i class="fa-brands fa-instagram"></i>https://www.instagram.com/iishath._?igsh=dzl2cGd3cGV6ZWky</a>
+
+<br>
+
+  <a href="#1"><i class="fa-brands fa-linkedin"></i> https://www.LinkedIn.com/ishathameema?igsh=dzl2cGd3cGV6ZWky</a>
+  <br>
+
+  <a href="#1"><i class="fa-brands fa-twitter"></i> https://www.twitter.com/ishathameema?igsh=dzl2cGd3cGV6ZWky</a>
+</h6>
+</p>
+
+       </div>
+  </div>
+  <div class="col-md-8 py-5">
+    <!-- second column -->
+     <h1 class="text-center" style="font-weight:980 ;">Ayshath Thameema</h1>
+     <div class="card mt-4">
+      <div class="card-header">
+        <h3>Objective</h3>
+      </div>
+      <div class="card-body">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores repellat nulla, unde id expedita ut, itaque nostrum voluptatibus quod sint aliquid molestiae perspiciatis at, delectus architecto sunt ipsam optio dolorem!</p>
+      </div>
+     </div>
+     <div class="card mt-4">
+      <div class="card-header">
+        <h3>Work Experience</h3>
+        <div class="card-body">
+          <ul>
+            <li>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </li>
+          </ul>
+        </div>
+      </div>
+</div>
+ </div>
+ </div>
+
+
+ 
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="resume.js"></script>
+</body>
+</html>
